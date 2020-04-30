@@ -6,7 +6,12 @@
 	
 	git也是一样，每当你觉得文件修改到一定程度的时候，就可以保存一个快照，这个快照在Git中被称为commit。
 	我们可以选择回退到某一个版本。
-	
+	git add 自己的文件               表示把自己的文件名添加到仓库中 这样在git commit之后就可以被git管理了。
+	git commit -m "自定义的字符串"   表示提交当前的修改 -m意思是当前版本的描述信息，方便自己和他人查看
+	git diff     表示查看当前版本和上一个版本的差异信息  是unix的标准合并diff格式。
+	git log查看提交版本信息记录
+	git reset -- hard HEAD^回退到上一个commit的版本
+	git提供了一个命令git reflog来记录你的每一次命令。这样可以查看每一次的操作 和回退的版本id。
 	
 	git clone ssh://lvchao@192.168.103.244:2223/home/repo/electron-caj
 	
