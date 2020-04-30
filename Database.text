@@ -20,7 +20,9 @@
 	第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支
 	
 	
-	
+		//这是我添加的内容
+	use "git add <file>..." to update what will be committed)
+	use "git checkout -- <file>..." to discard changes in working directory
 	
 	
 	
