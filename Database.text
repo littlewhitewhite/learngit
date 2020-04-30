@@ -4,6 +4,9 @@
 	2：数据库操纵：向数据库的Table中增删改查等。DBMS提供了一套数据操纵语言DataManipulationLanguage给用户，用户使用DML描述其所要
 	进行的增删改查操作；然后DBMS解析DML语言，并执行相应的操作。
 	
+	git也是一样，每当你觉得文件修改到一定程度的时候，就可以保存一个快照，这个快照在Git中被称为commit。
+	我们可以选择回退到某一个版本。
+	
 	
 	git clone ssh://lvchao@192.168.103.244:2223/home/repo/electron-caj
 	
