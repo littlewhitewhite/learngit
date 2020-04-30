@@ -1,0 +1,11 @@
+一：从用户角度看数据库管理系统的功能：
+	1：定义数据库中table的名称，标题（内含的属性名称及对该属性的值得要求）等
+	DBMS提供了一套数据定义语言，用户使用DDL（DataDefinitonLanguage）描述索要建立表的格式，DBMS依照用户的定义，创建数据库及其中的Table
+	2：数据库操纵：向数据库的Table中增删改查等。DBMS提供了一套数据操纵语言DataManipulationLanguage给用户，用户使用DML描述其所要
+	进行的增删改查操作；然后DBMS
+	
+	
+	git clone ssh://lvchao@192.168.103.244:2223/home/repo/electron-caj
+	
+	git config --global user.name "lc"
+	git config --global user.email "987124487@qq.com"
