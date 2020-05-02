@@ -14,7 +14,9 @@
 	git status可以查看当前版本的状态
 	git log查看提交版本信息记录
 	git reset -- hard HEAD^回退到上一个commit的版本
-	git提供了一个命令git reflog来记录你的每一次命令。这样可以查看每一次的操作 和回退的版本id。
+	之后再用git log显示会显示从上一次开始提交的id号， 但我们如果想要回退到最新的那一版，可以使用git reset --hard 版本号。
+	这时候可以通过git reflog显示版本号。git提供了一个命令git reflog来记录你的每一次命令。这样可以查看每一次的操作 和回退的版本id。
+	
 	
 	git add把文件添加进去，实际上就是把文件修改添加到暂存区
 	第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支
@@ -27,3 +29,17 @@
 	
 	git config --global user.name "lc"
 	git config --global user.email "987124487@qq.com"
+	
+	
+	要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
+
+	关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+
+	此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
+	
+	
+	
+	git分支:
+	在版本回退里，你已经知道，每次提交，Git都把它们串成一条时间线，这条时间线就是一个分支。
+	截止到目前，只有一条时间线，在Git里，这个分支叫主分支，即master分支。
+	HEAD严格来说不是指向提交，而是指向master，master才是指向提交的，所以，HEAD指向的就是当前分支
